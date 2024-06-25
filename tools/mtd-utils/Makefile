@@ -28,9 +28,6 @@ ifneq ($(HOST_OS),Linux)
 	-include fls.h
 endif
 
-HOST_CONFIGURE_VARS+= \
-	UUID_CFLAGS="-I$(STAGING_DIR_HOST)/include/e2fsprogs/uuid"
-
 HOST_CONFIGURE_ARGS+= \
 	--disable-tests \
 	--without-crypto \
